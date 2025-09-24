@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+@font-face {
+    font-family: "Satisfaction";
+    src: url(fonts/Satisfaction.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Alan Sans;
+    color: #515151
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding:.5em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+.main-header {
+    background-color: rgba(198, 170, 170, 0.74);
+    background-image: url(imgs/header_background.webp); 
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+}
+
+.TS-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Satisfaction";
+    font-weight: normal;
+    color: whitesmoke;
+    padding-top: 2%;
+}
+
+.TS-name-large {
+    font-size: 5em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-weight: normal;
+    color: rgb(62, 62, 62);
+    text-align: center;
+    font-size: 2em;
+}
+
+.about-img {
+    float: left;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: pink;
+    color: whitesmoke;
+    padding: .25em 0 ;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.main-footer-container .TS-name {
+    font-size: 2em;
+}
+
+.footer-nav img {
+    width: 20px;
+    height: 20px;
+}
+
