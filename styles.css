@@ -211,3 +211,40 @@ html, body {
     background-color: rgb(250, 178, 190);
 }
 
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.shop-item-img {
+    height: 250px;
+    width: auto;
+    display: block;    
+    margin: 0 auto;    
+    
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;   
+}
+
+.shop-item-price {
+    flex-grow: 1;
+
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
