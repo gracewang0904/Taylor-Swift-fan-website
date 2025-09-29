@@ -23,34 +23,34 @@
         <div class="shop-items">
             <div class="shop-item">
                 <span class="shop-item-title">1989</span>
-                <img class="shop-item-img" src="imgs/Taylor_1989_album.webp" >
+                <img class="shop-item-img" src="imgs/Taylor_1989_album.webp">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$34.99</span>
-                    <button class="btn btn-primary shop-item-button">Add to cart</button>
+                    <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
                 </div>
             </div>
             <div class="shop-item">
                 <span class="shop-item-title">RED</span>
-                <img class="shop-item-img" src="imgs/Taylor_Red_album.webp" >
+                <img class="shop-item-img" src="imgs/Taylor_Red_album.webp">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$65.88</span>
-                    <button class="btn btn-primary shop-item-button">Add to cart</button>
+                    <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
                 </div>
             </div>
             <div class="shop-item">
                 <span class="shop-item-title">Fearless</span>
-                <img class="shop-item-img" src="imgs/Taylor_Fearless_album.webp" >
+                <img class="shop-item-img" src="imgs/Taylor_Fearless_album.webp">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$56.64</span>
-                    <button class="btn btn-primary shop-item-button">Add to cart</button>
+                    <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
                 </div>
             </div>
             <div class="shop-item">
                 <span class="shop-item-title">folklore</span>
-                <img class="shop-item-img" src="imgs/Taylor_folklore_album.webp" >
+                <img class="shop-item-img" src="imgs/Taylor_folklore_album.webp">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$48.99</span>
-                    <button class="btn btn-primary shop-item-button">Add to cart</button>
+                    <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
                 </div>
             </div>
         </div>
@@ -59,51 +59,52 @@
         <h2>Merch</h2>
         <div class="shop-items">
             <div class="shop-item">
-                    <span class="shop-item-title">1989 Open Knit Sweater</span>
-                <img class="shop-item-img" src="imgs/merch_open_knit_sweater.webp" >
+                <span class="shop-item-title">1989 Open Knit Sweater</span>
+                <img class="shop-item-img" src="imgs/merch_open_knit_sweater.webp">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$65.00</span>
-                    <button class="btn btn-primary shop-item-button">Add to cart</button>
+                    <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
                 </div>
             </div>
             <div class="shop-item">
-                    <span class="shop-item-title">Taylor Swift Lover Acoustic Guitar</span>
-                <img class="shop-item-img" src="imgs/merch_guitar.webp" >
+                <span class="shop-item-title">Taylor Swift Lover Acoustic Guitar</span>
+                <img class="shop-item-img" src="imgs/merch_guitar.webp">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$399.00</span>
-                    <button class="btn btn-primary shop-item-button">Add to cart</button>
+                    <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
                 </div>
             </div>
-            
+
         </div>
     </section>
-    <section>
-        <h2>Cart</h2>
-        <div>
-            <strong>Item</strong>
-            &lt;&gt;
-            <strong>Price</strong>
-            &lt;&gt;
-            <strong>Quantity</strong>
-            &lt;&gt;
+    <section class="container content-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Item</span>
+            <span class="cart-item cart-header cart-column">Price</span>
+            <span class="cart-item cart-header cart-column">Quantity</span>
         </div>
-        <div>
-            <img src="imgs/merch_open_knit_sweater_no_background.webp">
-            <span> 1989 Open Knit Sweater </span>
-            &lt;&gt;
-            <span>$65.00</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button>Remove</button>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-img" src="imgs/merch_open_knit_sweater_no_background.webp">
+                <span class="cart-item-title"> 1989 Open Knit Sweater </span>
+            </div>
+            <span class="cart-price cart-column">$65.00</span>
+            <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger cart-quantity-button btn-primary" type="button">Remove</button>
+            </div>
         </div>
-        <div>
-            <img src="imgs/Taylor_Red_album.webp" >
-            <span>RED</span>
-            &lt;&gt;
-            <span>$65.88</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button>Remove</button>
+                <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-img" src="imgs/Taylor_Red_album.webp">
+                <span class="cart-item-title"> RED </span>
+            </div>
+            <span class="cart-price cart-column">$65.88</span>
+            <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger cart-quantity-button btn-primary" type="button">Remove</button>
+            </div>
         </div>
         <hr>
         <div>
@@ -114,26 +115,27 @@
             <button>Finish</button>
         </div>
     </section>
-    <footer>
-        <hr>
-        <h3>Taylor Swift</h3>
-        <ul>
-            <li>
-                <a href="https://www.youtube.com/channel/UCqECaJ8Gagnn7YCbPEzWH6g" target="_blank">
-                    <img src="imgs/YouTube_icon.png" >
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="TS-name">Taylor Swift</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com/channel/UCqECaJ8Gagnn7YCbPEzWH6g" target="_blank">
+                        <img src="imgs/YouTube_icon.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">
+                        <img src="imgs/spotify_icon.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/taylorswift/" target="_blank">
+                        <img src="imgs/Instagram_icon.png">
+                </li>
                 </a>
-            </li>
-            <li>
-                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">
-                    <img src="imgs/spotify_icon.png" >
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/taylorswift/" target="_blank">
-                    <img src="imgs/Instagram_icon.png" >
-            </li>
-            </a>
-        </ul>
+            </ul>
+        </div>
     </footer>
 
 </body>
