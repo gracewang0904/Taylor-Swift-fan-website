@@ -236,6 +236,7 @@ html, body {
     display: flex;
     align-items: center;
     padding: 5px;   
+    margin-top: 10px;
 }
 
 .shop-item-price {
