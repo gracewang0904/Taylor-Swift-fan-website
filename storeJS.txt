@@ -1,0 +1,82 @@
+need the body to be loaded before the following code runs as otherwise where do they find these eles? they haven't been created yet
+this event will fire as soon as the page is done loading
+
+
+
+
+
+return all ele that has this class, also save in a var
+
+loop thru all buttons in the var
+
+add a listener to do smth when clicked on it, addEventListener always return an event obj inside the function it calls,here, it is whatever button we clicked on, seems like the button is auto passed to the fcn
+
+
+now we want to make changes when the input quantity number changes
+
+
+this event is also auto fed to the fcn
+
+
+select the parent container
+remove until empty
+
+
+
+
+and it has a filed called target. remember that the target ele is the actual element we need
+we want to remove the entire "row" from cart once it is clicked (btn->quantity->cart-row)
+go through every single entry and add together
+
+
+
+now wanna check if value is valid
+isNaN = is not a number
+if not valid, set the number to one
+
+re sum up everything again
+
+
+
+this finds the shop-item parent, which has all info about an item (pics, name, price, etc)
+
+
+
+
+all row under "cart-items" class, getElementsByClassName returns an array of eles
+access the img by their src
+
+
+
+
+
+
+need to create a row in the cart section
+create an ele of any type we want. we want this new div to be added to the cart items
+idk why /////////////
+
+check if there's already existing ones, then inc the quantity number
+if do cartRow.innerText = title, then you'll see title in the end of the cart, occupying a row by itself
+this item has been added
+popup something to alert the user
+
+use `` so that it can occupy multiple lines. we use this because this is faster than adding one by one as using innerText and all
+
+now it is not really updated, so replace them by placeholders
+but it will add duplicated items instead of merging them by adding the quantity #
+append add to the end
+
+
+loop over
+
+get the price and quantity
+now if you do console.log(priceElement, quantityElement), the results are <span class="cart-price cart-column cart-column-price">$65.00</span> and <input class="cart-quantity-input" type="number" value="1">. now you have the elements itselves instead of the actual numbers
+innerText get whatever text is in that ele, but it has the "$" sign. parseFloat convert str to float. replace will replace each and every '$' to nothing
+value gets the value within input elements, note that we don't use innerText here
+
+now this new row is added, but if you click remove, it won't get removed because you only addEventListener right after the document was loaded. this new row is after that
+idk isn't this adding to the first one???
+
+
+it will have floating decimals, so first preserve the two decimals, round to an integer, then divide
+combine $ with the total price number 
