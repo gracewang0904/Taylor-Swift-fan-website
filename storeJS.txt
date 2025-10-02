@@ -54,6 +54,11 @@ access the img by their src
 need to create a row in the cart section
 create an ele of any type we want. we want this new div to be added to the cart items
 idk why /////////////
+Every element in HTML has a classList property, which is basically the list of all its CSS classes.
+
+.add('cart-row') adds the class "cart-row" to that list. -> <div class="cart-row"></div>
+
+
 
 check if there's already existing ones, then inc the quantity number
 if do cartRow.innerText = title, then you'll see title in the end of the cart, occupying a row by itself
@@ -65,6 +70,7 @@ use `` so that it can occupy multiple lines. we use this because this is faster 
 now it is not really updated, so replace them by placeholders
 but it will add duplicated items instead of merging them by adding the quantity #
 append add to the end
+cartRow is the newly added ones
 
 
 loop over
