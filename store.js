@@ -26,7 +26,7 @@ function ready() {
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
-function purchaseClicked () {
+function purchaseClicked() {
     alert('Thank you for your purchase')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
@@ -65,7 +65,7 @@ function addItemToCart(title, price, imgSrc) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (var i = 0; i < cartItemNames.length; i++) {
-        if(cartItemNames[i].innerText == title) {
+        if (cartItemNames[i].innerText == title) {
             alert('This item is already added in the cart')
             return
         }
