@@ -18,7 +18,7 @@ Open index.html in your web browser to view the site.
 Explore:
 Navigate between Home, About, and Store pages using the navigation bar.
 
-## Credits
+### Credits
 All images, content, fonts are from the internet.
 Inspired by Taylor Swift and her music.
 Enjoy the site :)
