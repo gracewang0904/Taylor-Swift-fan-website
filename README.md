@@ -26,7 +26,7 @@ Open index.html in your web browser to view the site.
 Navigate between Home, About, and Store pages using the navigation bar.
 
 ### 📸 Credits
-Followed YouTube videos by [Web Dev Simplified](https://www.youtube.com/watch?v=YeFzkC2awTM&list=PLZlA0Gpn_vH9xx-RRVNG187ETT2ekWFsq&index=11)
+Followed YouTube videos by [Web Dev Simplified](https://www.youtube.com/watch?v=YeFzkC2awTM&list=PLZlA0Gpn_vH9xx-RRVNG187ETT2ekWFsq&index=11).
 
 All images, content, fonts are from the internet.
 
