@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="store.html">STORE</a></li>
+                <li><a href="/store">STORE</a></li>
             </ul>
         </nav>
         <h1 class="TS-name TS-name-large">Taylor Swift</h1>
@@ -29,7 +29,7 @@
             <% items.music.forEach(function(item){ %>
                 <div class="shop-item" data-item-id="<%= item.id %>">
                     <span class="shop-item-title"><%=item.name%></span>
-                    <img class="shop-item-img" src="imgs/<%= item.imgName %>">
+                    <img class="shop-item-img" src="imgs/<%= item.image %>">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$<%= item.price / 100 %></span>
                         <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
@@ -44,7 +44,7 @@
             <% items.merch.forEach(function(item){ %>
                 <div class="shop-item" data-item-id="<%= item.id %>">
                     <span class="shop-item-title"><%=item.name%></span>
-                    <img class="shop-item-img" src="imgs/<%= item.imgName %>">
+                    <img class="shop-item-img" src="/imgs/<%= item.image %>">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$<%= item.price / 100 %></span>
                         <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
@@ -67,6 +67,7 @@
             <span class="cart-total-price">$0</span>
         </div>
         <div class="purchase">
+            <ul class="purchase-warning">Do not input any personal banking information!</ul>
             <button class="btn btn-primary btn-purchase">Finish</button>
         </div>
     </section>

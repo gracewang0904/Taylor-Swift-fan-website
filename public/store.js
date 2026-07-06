@@ -4,6 +4,7 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+// adding eventlisteners to remove btns, input, addToCart btns
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -41,19 +42,48 @@ var stripeHandler = StripeCheckout.configure({
         var cartRows = cartItemContainer.getElementsByClassName('cart-row')
         for (var i = 0; i < cartRows.length; i++) {
             var cartRow = cartRows[i]
-            var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')
+            var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]  // this is the input element
+            var quantity = quantityElement.value  // this gets the value
+            var id = cartRow.dataset.itemId
+            // add this to items
+            items.push({
+                id: id,
+                quantity: quantity
+            })
         }
+
+        // now send info to server, and get the response - fetch
+        fetch('/purchase', {
+            method: 'POST',  // post request: send info to server and let server do stuff
+                            // get request: send info to server and get back info
+            headers: {
+                'Content-Type': 'application/json',   // send json
+                'Accept': 'application/json'  // receive json
+
+            },
+            body: JSON.stringify({  // make json into string
+                stripeTokenId: token.id,
+                items: items
+            })
+        }).then(function(res) {
+            return res.json()
+        }).then(function(data) {
+            alert('data.message')
+            var cartItems = document.getElementsByClassName('cart-items')[0]
+            while (cartItems.hasChildNodes()) {
+                cartItems.removeChild(cartItems.firstChild)
+            }
+            updateCartTotal()
+        }).catch(function(error) {
+            console.error(error)
+        })
     }
 })
 
 // call stripe
 function purchaseClicked() {
     // alert('Thank you for your purchase')
-    // var cartItems = document.getElementsByClassName('cart-items')[0]
-    // while (cartItems.hasChildNodes()) {
-    //     cartItems.removeChild(cartItems.firstChild)
-    // }
-    // updateCartTotal()
+    
     var priceEle = document.getElementsByClassName('cart-total-price')[0]  // we want the 1st in this arr
     // stripe expect cents
     var price = parseFloat(priceEle.innerText.replace('$', '')) * 100
