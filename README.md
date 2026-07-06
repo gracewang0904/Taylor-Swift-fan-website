@@ -47,3 +47,5 @@ Open `http://localhost:3000` in your browser.
 - Using EJS for server-side rendering
 - Working with asynchronous JavaScript
 - Integrating a third-party payment API (Stripe)
+
+Part of the project was inspired by YouTuber Web Dev Simplified
