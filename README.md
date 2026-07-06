@@ -4,7 +4,7 @@ A full-stack e-commerce web application themed around Taylor Swift albums and me
 ## Features
 - Bio of Taylor and her recent marrige on 2026/7/3
 - Browse albums and merchandise
-- Secure test checkout using Stripe
+- Secure checkout using Stripe
 - Product data stored in SQLite
 - Server-side rendering with EJS
 
@@ -12,7 +12,7 @@ A full-stack e-commerce web application themed around Taylor Swift albums and me
 - **Frontend:** HTML, CSS, JavaScript, EJS
 - **Backend:** Node.js, Express.js
 - **Database:** SQLite
-- **API:** Stripe Test API
+- **API:** Stripe API
 
 ## Getting Started
 1. Install dependencies
