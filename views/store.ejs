@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Taylor Swift | Store</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script src="store.js" defer></script>
+    <script>
+        var stripePubKey = '<%=stripePubKey%>'
+    </script>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="/store">STORE</a></li>
+            </ul>
+        </nav>
+        <h1 class="TS-name TS-name-large">Taylor Swift</h1>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">Music</h2>
+        <div class="shop-items">
+            <% items.music.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%=item.name%></span>
+                    <img class="shop-item-img" src="imgs/<%= item.image %>">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$<%= item.price / 100 %></span>
+                        <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2>Merch</h2>
+        <div class="shop-items">
+            <% items.merch.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%=item.name%></span>
+                    <img class="shop-item-img" src="/imgs/<%= item.image %>">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$<%= item.price / 100 %></span>
+                        <button class="btn btn-primary shop-item-button btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column cart-column-item">Item</span>
+            <span class="cart-item cart-header cart-column cart-column-price">Price</span>
+            <span class="cart-item cart-header cart-column cart-column-quantity">Quantity</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <div class="purchase">
+            <ul class="purchase-warning">Do not input any personal banking information!</ul>
+            <button class="btn btn-primary btn-purchase">Finish</button>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="TS-name">Taylor Swift</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com/channel/UCqECaJ8Gagnn7YCbPEzWH6g" target="_blank">
+                        <img src="imgs/YouTube_icon.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">
+                        <img src="imgs/spotify_icon.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/taylorswift/" target="_blank">
+                        <img src="imgs/Instagram_icon.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

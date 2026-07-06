@@ -1,0 +1,54 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "1989",
+            "price": 3499,
+            "imgName": "Taylor_1989_album.webp"
+        },
+        {
+            "id": 2,
+            "name": "RED",
+            "price": 6588,
+            "imgName": "Taylor_Red_album.webp"
+        },
+        {
+            "id": 3,
+            "name": "Fearless",
+            "price": 5664,
+            "imgName": "Taylor_Fearless_album.webp"
+        },
+        {
+            "id": 4,
+            "name": "folklore",
+            "price": 4899,
+            "imgName": "Taylor_folklore_album.webp"
+        },
+        {
+            "id": 5,
+            "name": "Lover",
+            "price": 2297,
+            "imgName": "Taylor_LOVER_album.jpg"
+        },
+        {
+            "id": 6,
+            "name": "The Life of a Showgirl",
+            "price": 4199,
+            "imgName": "Taylor_The_Life_of_a_Showgirl_album2.jpg"
+        }
+    ],
+    "merch": [
+        {
+            "id": 7,
+            "name": "1989 Open Knit Sweater",
+            "price": 6500,
+            "imgName": "merch_open_knit_sweater.webp"
+        },
+        {
+            "id": 8,
+            "name": "Taylor Swift Lover Acoustic Guitar",
+            "price": 39900,
+            "imgName": "merch_guitar.webp"
+        }
+    ]
+}
