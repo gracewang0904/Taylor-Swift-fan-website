@@ -1,35 +1,49 @@
-## 🎤 Taylor Swift Fan Website
-Welcome to the **Taylor Swift Fan Website**! This is a simple, static website dedicated to celebrating the music, tours, and merchandise of Taylor Swift.
+# Taylor Swift Fan Hub
+A full-stack e-commerce web application themed around Taylor Swift albums and merchandise. Users can browse products, add items to a shopping cart, and complete a simulated checkout using Stripe's test payment API.
 
-### 🌟 Features
-- **Home Page**: Overview of Taylor Swift and her tours.
+## Features
+- Bio of Taylor and her recent marrige on 2026/7/3
+- Browse albums and merchandise
+- Secure test checkout using Stripe
+- Product data stored in SQLite
+- Server-side rendering with EJS
 
-- **About Page**: Biography and background information.
+## Tech Stack
+- **Frontend:** HTML, CSS, JavaScript, EJS
+- **Backend:** Node.js, Express.js
+- **Database:** SQLite
+- **API:** Stripe Test API
 
-- **Store Page**: Browse and purchase Taylor Swift merchandise.
+## Getting Started
+1. Install dependencies
+```bash
+npm install
+```
 
-### 💻 Technologies Used
-- **HTML**: Structure and content for all pages.
+2. Sign up for Stripe
+- Please go to https://stripe.com/ and sign up
+- Go to Dashboard, at the top search bar search for API keys
+- Under Standard keys, you'll find your Publishable key and Secret key
 
-- **CSS**: Styling, layout, and responsive design.
+3. Create a `.env` file
 
-- **JavaScript**: Interactive features (e.g., store/cart logic).
+```text
+STRIPE_PUBLIC_KEY=your_public_key
+STRIPE_SECRET_KEY=your_secret_key
+```
 
-### 🚀 How to Use
-- Clone or Download:
-Download the repository or clone it to your local machine.
+4. Start the server
 
-- Open in Browser:
-Open index.html in your web browser to view the site.
+```bash
+node server.js
+```
 
-- Explore:
-Navigate between Home, About, and Store pages using the navigation bar.
+Open `http://localhost:3000` in your browser.
 
-### 📸 Credits
-Followed YouTube videos by [Web Dev Simplified](https://www.youtube.com/watch?v=YeFzkC2awTM&list=PLZlA0Gpn_vH9xx-RRVNG187ETT2ekWFsq&index=11).
+## What I Learned
 
-All images, content, fonts are from the internet.
-
-Inspired by Taylor Swift and her music.
-
-Enjoy the site :)
+- Building RESTful APIs with Express
+- Integrating SQLite into a Node.js application
+- Using EJS for server-side rendering
+- Working with asynchronous JavaScript
+- Integrating a third-party payment API (Stripe)
